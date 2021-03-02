@@ -12,7 +12,7 @@ class Node {
 
     void append(int d) {
         Node end = new Node(d);
-        Node n = this;
+        Node n = this; // 포인터
         while (n.next != null) {
             n = n.next;
         }
