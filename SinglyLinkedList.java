@@ -1,3 +1,7 @@
+/*
+    단방향 링크드 리스트
+    단방향 링크드 리스트를 뒤에서부터 세기
+*/
 class Node {
     int data;
     Node next = null;

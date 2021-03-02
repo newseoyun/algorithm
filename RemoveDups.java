@@ -1,4 +1,5 @@
-class LinkedLista {
+// 양방향 링크드 리스트에서 중복 삭제하기
+class LinkedLists {
     Node header;
 
     static class Node {
