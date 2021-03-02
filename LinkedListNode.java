@@ -39,6 +39,7 @@ class LinkedList {
         }
         System.out.println(n.data);
     }
+
 }
 
 
@@ -54,5 +55,7 @@ public class LinkedListNode {
         ll.delete(1);
         ll.retrieve();
 
+
     }
+
 }

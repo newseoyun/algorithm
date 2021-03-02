@@ -1,4 +1,4 @@
-class LinkedList {
+class LinkedLista {
     Node header;
 
     static class Node {
@@ -40,7 +40,7 @@ class LinkedList {
         System.out.println(n.data);
     }
 
-    void removeDups() {
+    void removeDups() { // 공간 O(1)   시간 O(n²)
         Node n = header;
         while (n.next != null) {
             Node r = n;
@@ -69,6 +69,8 @@ public class RemoveDups {
         ll.append(4);
         ll.append(5);
         ll.append(2);
+        ll.retrieve();
+        ll.removeDups();
         ll.retrieve();
     }
 }
