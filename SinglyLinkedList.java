@@ -75,7 +75,7 @@ public class SinglyLinkedList {
 
 
 
-    // // 재귀호출을 이용한 k번째 값 반환
+    // // 재귀호출을 이용한 k번째 값 반환    시간: O(n) 공간: O(n)
     // private static int KthToLast(Node n, int k) {
     //     if (n == null) {
     //         return 0;
@@ -90,7 +90,7 @@ public class SinglyLinkedList {
 
 
 
-    // 포인터를 이용해서 뒤에서부터 k번째 노드 반환
+    // 포인터를 이용해서 뒤에서부터 k번째 노드 반환    시간: O(n) 공간: O(1)
     private static Node KthToLast(Node first, int k) {
         Node p1 = first;
         Node p2 = first;
