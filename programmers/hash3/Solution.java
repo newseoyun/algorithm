@@ -1,4 +1,4 @@
-package programmers.hash3;
+package hash3;
 
 import java.util.*;
 
