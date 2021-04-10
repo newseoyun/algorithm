@@ -1,4 +1,4 @@
-package sort1;
+package programmers.sort1;
 import java.util.*;
 
 class Solution2 {

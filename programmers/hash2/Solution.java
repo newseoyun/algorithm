@@ -1,4 +1,4 @@
-package hash2;
+package programmers.hash2;
 
 import java.util.*;
 
