@@ -14,7 +14,7 @@ class Main04 {
             answer.add(tmp);
             */
 
-            // 뒤집는 방식을 직접 구현: 양 끝을 점점 가운데로 서로 교환하기
+            // 뒤집기 직접 구현 (중앙 기점으로 양 끝을 서로 교환하기)
             char[] s = x.toCharArray();
             int lt = 0;
             int rt = x.length()-1;
