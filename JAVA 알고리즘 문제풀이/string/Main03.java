@@ -1,22 +1,27 @@
 import java.util.*;
 
 /**
- * 대소문자 변환
+ * 문장 속 단어 (긴 단어 찾기)
  */
 class Main03 {
     public String solution(String str) {
         String answer = "";
-        for (char x : str.toCharArray()) {
-            if (Character.isLowerCase(x)) answer += Character.toUpperCase(x);
-            else answer += Character.toLowerCase(x);
+        int m = Integer.MIN_VALUE;
+        String[] s = str.split(" ");
+        for (String x : s) {
+            int len = x.length();
+            if (len > m) {
+                m = len;
+                answer = x;
+            }
         }
         return answer;
     }
 
     public static void main(String[] args) {
-        Main02 T = new Main03();
+        Main03 T = new Main03();
         Scanner sc = new Scanner(System.in);
-        String str = sc.next();
+        String str = sc.nextLine();
         System.out.print(T.solution(str));
     }
 }
