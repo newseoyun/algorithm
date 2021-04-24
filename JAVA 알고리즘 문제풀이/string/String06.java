@@ -3,7 +3,7 @@ import java.util.*;
 /**
  * 특정 문자 뒤집기
  */
-class Main05 {
+class String06 {
     public String solution(String str) {
         String answer = "";
         char[] s = str.toCharArray();
@@ -26,7 +26,7 @@ class Main05 {
     }
 
     public static void main(String[] args) {
-        Main05 T = new Main05();
+        String06 T = new String06();
         Scanner sc = new Scanner(System.in);
         String str = sc.next();
         System.out.println(T.solution(str));

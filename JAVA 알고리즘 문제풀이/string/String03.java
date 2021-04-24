@@ -3,7 +3,7 @@ import java.util.*;
 /**
  * 문장 속 단어 (긴 단어 찾기)
  */
-class Main03 {
+class String03 {
     public String solution(String str) {
         String answer = "";
         int m = Integer.MIN_VALUE;
@@ -19,7 +19,7 @@ class Main03 {
     }
 
     public static void main(String[] args) {
-        Main03 T = new Main03();
+        String03 T = new String03();
         Scanner sc = new Scanner(System.in);
         String str = sc.nextLine();
         System.out.print(T.solution(str));

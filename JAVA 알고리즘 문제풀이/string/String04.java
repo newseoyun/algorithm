@@ -3,7 +3,7 @@ import java.util.*;
 /**
  * 단어 뒤집기
  */
-class Main04 {
+class String04 {
     public ArrayList<String> solution(int n, String[] str) {
         ArrayList<String> answer = new ArrayList<>();
 
@@ -35,7 +35,7 @@ class Main04 {
     }
 
     public static void main(String[] args) {
-        Main04 T = new Main04();
+        String04 T = new String04();
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         String[] str = new String[n];

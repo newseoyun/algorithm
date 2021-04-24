@@ -3,7 +3,7 @@ import java.util.*;
 /**
  * 대소문자 변환
  */
-class Main02 {
+class String02 {
     public String solution(String str) {
         String answer = "";
         for (char x : str.toCharArray()) {
@@ -14,7 +14,7 @@ class Main02 {
     }
 
     public static void main(String[] args) {
-        Main02 T = new Main02();
+        String02 T = new String02();
         Scanner sc = new Scanner(System.in);
         String str = sc.next();
         System.out.print(T.solution(str));
