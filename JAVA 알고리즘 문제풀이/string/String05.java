@@ -1,7 +1,7 @@
 import java.util.*;
 
 /**
- * 중복 문자 제거
+ * 특정 문자 뒤집기
  */
 class String05 {
     public String solution(String str) {
