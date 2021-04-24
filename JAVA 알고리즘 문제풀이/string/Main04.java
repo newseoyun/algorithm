@@ -9,7 +9,7 @@ class Main04 {
 
         for (String x : str) {
             /*
-            // reverse() 이용해서 순서대로 뒤집기
+            // StringBuilder의 reverse() 이용해서 순서대로 뒤집기
             String tmp = new StringBuilder(x).reverse().toString();
             answer.add(tmp);
             */
