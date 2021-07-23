@@ -5,9 +5,7 @@ import java.util.Scanner;
  */
 public class Array12 {
 
-
     int solution(int n, int m, int[][] arr) {
-
         int answer = 0;
 
         for(int i=1; i<=n; i++) {
