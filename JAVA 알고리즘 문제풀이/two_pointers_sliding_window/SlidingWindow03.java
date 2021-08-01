@@ -3,7 +3,7 @@ import java.util.Scanner;
 /**
  * 연속된 k일의 합이 최대 매출인 그 합 구하기
  */
-class SlidingWindow {
+class SlidingWindow03 {
 
     int solution(int n, int k, int[] arr) {
         int answer = 0;
@@ -20,7 +20,7 @@ class SlidingWindow {
     }
 
     public static void main(String[] args) {
-        SlidingWindow T = new SlidingWindow();
+        SlidingWindow03 T = new SlidingWindow03();
         Scanner kb = new Scanner(System.in);
         int n = kb.nextInt();
         int k = kb.nextInt();
