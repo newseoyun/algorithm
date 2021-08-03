@@ -1,4 +1,5 @@
 import java.util.HashMap;
+import java.util.Scanner;
 
 /**
  * 학급 회장 (입력 문자 중 가장 많은 문자)
