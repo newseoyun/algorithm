@@ -1,4 +1,4 @@
-
+import java.util.Scanner;
 
 /**
  * 연속된 자연수의 합: 수학적 방법
