@@ -16,7 +16,7 @@ public class Complex06 {
                 if (arr[lt] == 0) cnt--;
                 lt++;
             }
-            answer = Math.max(answer, rt);
+            answer = Math.max(answer, rt - lt + 1);
         }
         return answer;
     }
