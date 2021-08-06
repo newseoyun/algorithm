@@ -6,7 +6,7 @@ import java.util.Scanner;
  */
 public class HashMapTreeSet01 {
 
-    char solution(int n, String n) {
+    char solution(int n, String s) {
         char answer = ' ';
 
         HashMap<Character, Integer> map = new HashMap<>();
@@ -16,7 +16,7 @@ public class HashMapTreeSet01 {
 
         int max = Integer.MIN_VALUE;
         for (char key : map.keySet()) {
-            if (map.get(ket) > max) {
+            if (map.get(key) > max) {
                 max = map.get(key);
                 answer = key;
             }
