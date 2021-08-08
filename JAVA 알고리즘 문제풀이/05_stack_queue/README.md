@@ -19,3 +19,6 @@ while(stack.pop() != '('){ stack.pop(); } 하면 팝을 두 번 하는 것.
 ***
 
 ### Queue
+* q.offer(a): 집어넣음
+* q.poll(): 뺌
+* q.peek() q.contain() q.size()
