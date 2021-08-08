@@ -3,7 +3,7 @@ import java.util.Queue;
 import java.util.Scanner;
 
 /**
- * 응급실
+ * 응급실 내풀이
  */
 public class StackQueue08 {
 
