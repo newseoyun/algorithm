@@ -9,10 +9,18 @@ public class SortingSearching06 {
     ArrayList<Integer> solution(int n, int[] arr) {
         ArrayList<Integer> answer =  new ArrayList<>() ;
 
-        for(int i=0; i<n-1; i++) {
-            if(answer.isEmpty() && arr[i] > arr[i+1]) answer.add(i);
-            // 수정해야됨 if(answer.size() == 1 && arr[i] > arr[i+1]) answer.add(i+1);
+        // 내 풀이
+        for(int i=1; i<n; i++) {
+            if(arr[i-1] > arr[i]) {
+                answer.add( answer.isEmpty() ? i : i + 1 );
+            }
         }
+
+        // int[] tmp = arr.clone();
+        // Arrays.sort(tmp);
+        // for(int i=0; i<n; i++) {
+        //     if(arr[i] != tmp[i]) answer.add(i+1);
+        // }
 
         return answer;
     }
