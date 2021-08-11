@@ -27,7 +27,6 @@ public class SortingSearching04 {
         return cache;
     }
 
-
     public static void main(String[] args) {
         SortingSearching04 T = new SortingSearching04();
         Scanner kb = new Scanner(System.in);
@@ -37,5 +36,4 @@ public class SortingSearching04 {
         for(int i=0; i<n; i++) arr[i] = kb.nextInt();
         for(int a : T.solution(size, n, arr)) System.out.print(a + " ");
     }
-    
 }
