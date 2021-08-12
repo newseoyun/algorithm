@@ -36,5 +36,4 @@ class Point implements Comparable<Point> {
         if(this.x == o.x) return this.y - o.y;
         else return this.x - o.x;
     }
-
 }
