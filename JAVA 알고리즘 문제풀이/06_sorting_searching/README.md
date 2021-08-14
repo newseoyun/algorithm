@@ -16,3 +16,4 @@
 
 ### Searching
 
+Arrays.stream()
