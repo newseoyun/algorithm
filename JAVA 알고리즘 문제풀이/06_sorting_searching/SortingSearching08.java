@@ -47,5 +47,4 @@ public class SortingSearching08 {
         }
         System.out.print(T.solution(n, target, arr));
     }
-    
 }
