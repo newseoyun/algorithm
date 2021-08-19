@@ -6,7 +6,6 @@ public class Rtg04 {
     static int[] fibo;
     
     int solution(int n) {
-        
         if (fibo[n] > 0) return fibo[n]; 
         if(n == 1 || n == 2) return fibo[n] = 1;
         return fibo[n] = solution(n-2) + solution(n-1);
