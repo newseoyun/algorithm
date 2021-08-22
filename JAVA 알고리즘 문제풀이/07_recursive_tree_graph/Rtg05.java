@@ -41,6 +41,4 @@ class Node {
         lt = null;
         rt = null;
     }
-
-
 }
