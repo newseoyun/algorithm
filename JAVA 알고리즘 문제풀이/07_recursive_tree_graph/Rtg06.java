@@ -6,8 +6,8 @@
  */
 public class Rtg06 {
 
-    static int n;
-    static int[] ch;
+    static int n;  // 원소의 개수
+    static int[] ch;  // 체크 배열
 
     void DFS(int L) {
         if (L == n + 1) {

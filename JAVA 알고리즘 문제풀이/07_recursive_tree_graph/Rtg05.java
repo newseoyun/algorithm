@@ -36,7 +36,7 @@ class Node {
     int data;
     Node lt, rt; // 인스턴스 변수. Node 클래스의 객체 주소를 저장함.
 
-    public Node(int val) {
+    Node(int val) {
         data = val;
         lt = null;
         rt = null;
