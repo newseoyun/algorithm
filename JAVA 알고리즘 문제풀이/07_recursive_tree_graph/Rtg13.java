@@ -2,7 +2,9 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 /**
- * 경로탐색(인접리스트, ArrayList)
+ * 경로탐색2 (인접리스트, ArrayList)
+ * 
+ * 1번에서 N번으로 가는 모든 경로의 가지 수
  */
 public class Rtg13 {
 
