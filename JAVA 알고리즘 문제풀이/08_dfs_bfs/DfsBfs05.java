@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 /**
- * 동전 교환 
+ * 동전 교환 DFS
 
 입력
 3  (동전 종류 수)
@@ -19,7 +19,7 @@ public class DfsBfs05 {
     static int answer = Integer.MAX_VALUE;
 
     void DFS(int L, int sum, int[] arr) {
-        if (sum > m) return;
+        if (sum > m || L >= answer) return;
         if (sum == m) {
             answer = Math.min(answer, L);
         } else {
