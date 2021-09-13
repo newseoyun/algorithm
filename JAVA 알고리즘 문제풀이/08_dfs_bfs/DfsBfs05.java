@@ -1,3 +1,5 @@
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.Scanner;
 
 /**
@@ -18,7 +20,7 @@ public class DfsBfs05 {
     static int m;
     static int answer = Integer.MAX_VALUE;
 
-    void DFS(int L, int sum, int[] arr) {
+    void DFS(int L, int sum, Integer[] arr) {
         if (sum > m || L >= answer) return;
         if (sum == m) {
             answer = Math.min(answer, L);
@@ -33,8 +35,9 @@ public class DfsBfs05 {
         DfsBfs05 T = new DfsBfs05();
         Scanner kb = new Scanner(System.in);
         n = kb.nextInt();
-        int[] arr = new int[n];
+        Integer[] arr = new Integer[n];
         for (int i=0; i<n; i++) arr[i] = kb.nextInt();
+        Arrays.sort(arr, Collections.reverseOrder());
         m = kb.nextInt();
         T.DFS(0, 0, arr);
         System.out.println(answer);
