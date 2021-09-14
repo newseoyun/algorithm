@@ -1,3 +1,4 @@
+import java.util.Scanner;
 
 /**
  * 순열 구하기
@@ -42,7 +43,12 @@ public class DfsBfs06 {
     public static void main(String[] args) {
         DfsBfs06 T = new DfsBfs06();
         Scanner kb = new Scanner(System.in);
-        
+        n = kb.nextInt();
+        m = kb.nextInt();
+        arr = new int[n];
+        for (int i=0; i<n; i++) arr[i] = kb.nextInt();
+        ch = new int[n];
+        pm = new int[m];
+        T.DFS(0);
     }
-    
 }
