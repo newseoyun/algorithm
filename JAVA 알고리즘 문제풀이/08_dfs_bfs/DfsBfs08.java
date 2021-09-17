@@ -1,4 +1,5 @@
 import java.util.Scanner;
+
 /**
  * 수열 추측하기
 
