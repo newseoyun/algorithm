@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 /**
- * 조합구하기
+ * 조합 구하기
 
 입력
 4 2
