@@ -1,4 +1,6 @@
+import java.util.LinkedList;
 import java.util.Queue;
+import java.util.Scanner;
 
 /**
  * 섬나라 아일랜드(BFS)
@@ -13,7 +15,7 @@ public class DfsBfs14 {
 
     Queue<Point> queue = new LinkedList<>();
 
-    void BFS(int x, int y, int[] board) {
+    void BFS(int x, int y, int[][] board) {
         queue.add(new Point(x, y));
 
         while (!queue.isEmpty()) {
