@@ -30,18 +30,18 @@ public class DfsBfs11 {
     static int[][] distance;
 
     void BFS(int x, int y) {
-        Queue<InnerPoint> Q = new LinkedList<>();
-        Q.offer(new InnerPoint(x, y));
+        Queue<Point> Q = new LinkedList<>();
+        Q.offer(new Point(x, y));
         board[x][y] = 1;
 
         while (!Q.isEmpty()) {
-            InnerPoint tmp = Q.poll();
+            Point tmp = Q.poll();
             for (int i=0; i<4; i++) {
                 int nx = tmp.x + dx[i];
                 int ny = tmp.y + dy[i];
                 if (nx >= 1 && nx <= 7 && ny >= 1 && ny <= 7 && board[nx][ny] == 0) {
                     board[nx][ny] = 1;
-                    Q.offer(new InnerPoint(nx, ny));
+                    Q.offer(new Point(nx, ny));
                     distance[nx][ny] = distance[tmp.x][tmp.y] + 1;
                 }
             }

@@ -10,20 +10,20 @@ public class SortingSearching07 {
     public static void main(String[] args) {
         Scanner kb = new Scanner(System.in);
         int n = kb.nextInt();
-        ArrayList<InnerPoint> arr = new ArrayList<>();
+        ArrayList<Point> arr = new ArrayList<>();
         for(int i=0; i<n; i++) {
             int x = kb.nextInt();
             int y = kb.nextInt();
-            arr.add(new InnerPoint(x, y));
+            arr.add(new Point(x, y));
         }
         Collections.sort(arr);
-        for (InnerPoint point : arr) {
+        for (Point point : arr) {
             System.out.println(point.x + " " + point.y);
         }
     }
 }
 
-class Point implements Comparable<InnerPoint> {
+class Point implements Comparable<Point> {
     int x, y;
 
     public Point(int x, int y) {
@@ -32,7 +32,7 @@ class Point implements Comparable<InnerPoint> {
     }
 
     @Override
-    public int compareTo(InnerPoint o) {
+    public int compareTo(Point o) {
         if(this.x == o.x) return this.y - o.y;
         else return this.x - o.x;
     }

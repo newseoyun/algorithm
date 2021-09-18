@@ -27,17 +27,17 @@ public class DfsBfs12 {
     static int[][] distance;
     static int n;
     static int m;
-    static Queue<InnerPoint> Q = new LinkedList<>();
+    static Queue<Point> queue = new LinkedList<>();
 
     void BFS() {
-        while (!Q.isEmpty()) {
-            InnerPoint tmp = Q.poll();
+        while (!queue.isEmpty()) {
+            Point tmp = queue.poll();
             for (int i=0; i<4; i++) {
                 int nx = tmp.x + dx[i];
                 int ny = tmp.y + dy[i];
                 if (nx >= 0 && nx < n && ny >= 0 && ny < m && board[nx][ny] == 0) {
                     board[nx][ny] = 1;
-                    Q.offer(new InnerPoint(nx, ny));
+                    queue.offer(new Point(nx, ny));
                     distance[nx][ny] = distance[tmp.x][tmp.y] + 1;
                 }
             }
@@ -54,7 +54,7 @@ public class DfsBfs12 {
         for (int i=0; i<n; i++) {
             for (int j=0; j<m; j++) {
                 board[i][j] = kb.nextInt();
-                if (board[i][j] == 1) Q.offer(new InnerPoint(i, j));
+                if (board[i][j] == 1) queue.offer(new Point(i, j));
             }
         }
         T.BFS();
