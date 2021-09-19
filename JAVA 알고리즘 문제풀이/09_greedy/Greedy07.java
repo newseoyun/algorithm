@@ -1,7 +1,7 @@
 import java.util.*;
 
 /**
- * 원더랜드(크루스칼)
+ * 원더랜드(크루스칼, Union&Find)
  */
 
 class Edge07 implements Comparable<Edge07> {
@@ -32,7 +32,7 @@ class Greedy07 {
     public static void Union(int a, int b) {
         int fa = Find(a);
         int fb = Find(b);
-        
+
         if (fa != fb) unf[fa] = fb;
     }
     

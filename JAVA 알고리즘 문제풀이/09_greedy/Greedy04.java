@@ -1,7 +1,7 @@
 import java.util.*;
 
 /**
- * 최대 수입 스케줄
+ * 최대 수입 스케줄(우선순위큐)
  */
 
 class Lecture implements Comparable<Lecture> {

@@ -1,5 +1,8 @@
 import java.util.*;
 
+/**
+ * 친구인가(Union&Find)
+ */
 class Greedy06 {
 
     static int[] unf;
