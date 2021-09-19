@@ -2,19 +2,6 @@ import java.util.Scanner;
 
 /**
  * 순열 구하기
- * 
-입력 (숫자 3개. 2열)
-3 2
-3 6 9
-
-출력
-3 6
-3 9
-6 3
-6 9
-9 3
-9 6
-
  */
 public class DfsBfs06 {
 

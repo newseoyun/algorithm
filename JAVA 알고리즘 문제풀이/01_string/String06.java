@@ -18,6 +18,5 @@ class String06 {
         Scanner sc = new Scanner(System.in);
         String str = sc.next();
         System.out.println(T.solution(str));
-
     }
 }

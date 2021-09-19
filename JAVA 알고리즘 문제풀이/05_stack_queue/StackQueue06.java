@@ -21,7 +21,6 @@ public class StackQueue06 {
         return answer;
     }
 
-
     public static void main(String[] args) {
         StackQueue06 T = new StackQueue06();
         Scanner kb = new Scanner(System.in);
@@ -29,5 +28,4 @@ public class StackQueue06 {
         int k = kb.nextInt();
         System.out.println(T.solution(n, k));
     }
-
 }

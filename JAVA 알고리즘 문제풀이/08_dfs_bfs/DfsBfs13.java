@@ -2,24 +2,6 @@ import java.util.Scanner;
 
 /**
  * 섬나라 아일랜드(DFS)
-
-격자판에 1은 땅, 0은 바다. 
-상하좌우대각선 8방향 검증.
-섬은 몇 개?
-
-입력
-7
-1 1 0 0 0 1 0
-0 1 1 0 1 1 0
-0 1 0 0 0 0 0
-0 0 0 1 0 1 1
-1 1 0 1 1 0 0
-1 0 0 0 1 0 0
-1 0 1 0 1 0 0
-
-출력
-5
-
  */
 public class DfsBfs13 {
 
@@ -64,5 +46,4 @@ public class DfsBfs13 {
         T.solution(arr);
         System.out.println(answer);
     }
-    
 }

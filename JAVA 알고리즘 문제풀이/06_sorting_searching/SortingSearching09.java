@@ -6,17 +6,6 @@ import java.util.Scanner;
  */
 public class SortingSearching09 {
     
-    /**
-     * <pre> 
-    입력 예
-    9 3
-    1 2 3 4 5 6 7 8 9
-     * </pre>
-     * @param n 총 곡 수
-     * @param x 곡 수
-     * @param arr 곡들
-     * @return 용량
-     */
     int solution(int n, int m, int[] arr) {
         int answer = 0;
         int lt = Arrays.stream(arr).max().getAsInt();

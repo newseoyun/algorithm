@@ -20,7 +20,6 @@ public class StackQueue08 {
         return answer;
     }
 
-
     public static void main(String[] args) {
         StackQueue08 T = new StackQueue08();
         Scanner kb = new Scanner(System.in);

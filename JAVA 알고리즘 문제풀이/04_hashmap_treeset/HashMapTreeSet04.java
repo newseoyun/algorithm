@@ -36,5 +36,4 @@ public class HashMapTreeSet04 {
         String b = kb.next();
         System.out.print(T.solution(a, b));
     }
-    
 }

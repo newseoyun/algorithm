@@ -1,4 +1,3 @@
-
 /**
  * 이진트리순회(DFS: Depth First Search)
  * 전위순회(부모-왼-오), 중위순회(왼-부모-오), 후위순회(왼-오-부모)
@@ -16,7 +15,6 @@ public class Rtg05 {
         DFS(root.rt);
         System.out.print(root.data + " "); // 후위순회
     }
-
     
     public static void main(String[] args) {
         Rtg05 tree = new Rtg05();

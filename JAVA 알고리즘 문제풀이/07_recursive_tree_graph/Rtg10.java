@@ -25,7 +25,6 @@ public class Rtg10 {
         return 0;
     }
 
-
     public static void main(String[] args) {
         Rtg10 tree = new Rtg10();
         tree.root = new Node(1);
@@ -35,5 +34,4 @@ public class Rtg10 {
         tree.root.lt.rt = new Node(5);
         System.out.println(tree.BFS(tree.root));
     }
-    
 }

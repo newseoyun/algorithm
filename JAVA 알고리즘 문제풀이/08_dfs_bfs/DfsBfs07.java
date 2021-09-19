@@ -2,13 +2,6 @@ import java.util.Scanner;
 
 /**
  * 조합수(메모이제이션)
-
- 입력
-5 3
-
-출력
-10
-
  */
 public class DfsBfs07 {
 

@@ -4,20 +4,6 @@ import java.util.Scanner;
 
 /**
  * 토마토(BFS)
- 
- 익은 토마토 1, 안익은 토마토 0, 빈칸 -1
-상자에 담긴 토마토가 모두 익는 최소 일 수?
-
-입력
-6 4
-0 0 -1 0 0 0
-0 0 1 0 -1 0
-0 0 -1 0 0 0
-0 0 0 0 -1 1
-
-출력
-4
- 
  */
 public class DfsBfs12 {
 
@@ -51,6 +37,7 @@ public class DfsBfs12 {
         n = kb.nextInt();
         board = new int[n][m];
         distance = new int[n][m];
+
         for (int i=0; i<n; i++) {
             for (int j=0; j<m; j++) {
                 board[i][j] = kb.nextInt();
@@ -60,6 +47,7 @@ public class DfsBfs12 {
         T.BFS();
         boolean flag = true;
         int answer = Integer.MIN_VALUE;
+        
         for (int i=0; i<n; i++) {
             for (int j=0; j<m; j++) {
                 if (board[i][j] == 0) flag = false;

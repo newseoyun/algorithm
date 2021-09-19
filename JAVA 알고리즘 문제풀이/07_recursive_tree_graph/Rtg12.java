@@ -1,26 +1,7 @@
 import java.util.Scanner;
 
-
 /**
  * 경로탐색(DFS)
- * 
- * 1번에서 N번으로 가는 모든 경로의 가지 수
-
-    입력
-    5 9
-    1 2
-    1 3
-    1 4
-    2 1
-    2 3
-    2 5
-    3 4
-    4 2
-    4 5
-
-    출력
-    6
-  
  */
 public class Rtg12 {
 
@@ -43,7 +24,6 @@ public class Rtg12 {
         }
     }
 
-
     public static void main(String[] args) {
         Rtg12 T = new Rtg12();
         Scanner kb = new Scanner(System.in);
@@ -60,5 +40,4 @@ public class Rtg12 {
         T.DFS(1);
         System.out.println(answer);
     }
-    
 }

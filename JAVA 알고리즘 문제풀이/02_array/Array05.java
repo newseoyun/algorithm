@@ -1,6 +1,5 @@
 import java.util.Scanner;
 
-
 /**
  * 소수의 개수: 에라토스테네스 체
  * (소수: 1보다 큰 자연수 중 1과 자기자신만을 약수로 가지는 수)
@@ -34,5 +33,4 @@ public class Array05 {
         int n = kb.nextInt();
         System.out.println(T.solution(n));
     }
-    
 }

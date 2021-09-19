@@ -40,7 +40,6 @@ public class Rtg08 {
         }
         return 0;
     }
-
     
     public static void main(String[] args) {
         Rtg08 T = new Rtg08();

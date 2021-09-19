@@ -13,7 +13,6 @@ class String12 {
             answer += (char)num;
             s = s.substring(7);
         }
-
         return answer;
     }
 

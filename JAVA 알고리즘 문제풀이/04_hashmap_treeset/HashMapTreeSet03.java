@@ -37,5 +37,4 @@ public class HashMapTreeSet03 {
         }
         for(int x : T.solution(n, k, arr)) System.out.print(x + " ");
     }
-
 }

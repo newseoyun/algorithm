@@ -45,5 +45,4 @@ public class Array06 {
             System.out.print(x + " ");
         }
     }
-
 }

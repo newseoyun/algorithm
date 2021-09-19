@@ -1,4 +1,3 @@
-
 /**
  * Tree 말단 노드까지의 가장 짧은 경로(DFS)
  * (최단거리 문제는 BFS로 푸는 것이 BEST)
@@ -21,6 +20,5 @@ public class Rtg09 {
         tree.root.lt.lt = new Node(4);
         tree.root.lt.rt = new Node(5);
         System.out.println(tree.DFS(0, tree.root));
-    }
-    
+    }    
 }

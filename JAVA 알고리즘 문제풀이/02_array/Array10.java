@@ -35,7 +35,6 @@ public class Array10 {
         return answer;
     }
 
-
     public static void main(String[] args) {
         Array10 T = new Array10();
         Scanner kb = new Scanner(System.in);
@@ -50,5 +49,4 @@ public class Array10 {
         }
         System.out.print(T.solution(n, arr));
     }
-
 }

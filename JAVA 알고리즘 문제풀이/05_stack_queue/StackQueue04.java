@@ -30,5 +30,4 @@ public class StackQueue04 {
         String str = kb.next();
         System.out.println(T.solution(str));
     }
-    
 }

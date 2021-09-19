@@ -30,6 +30,5 @@ class String05 {
         Scanner sc = new Scanner(System.in);
         String str = sc.next();
         System.out.println(T.solution(str));
-
     }
 }

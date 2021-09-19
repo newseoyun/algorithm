@@ -19,7 +19,6 @@ public class Array07 {
         return answer;
     }
 
-
     public static void main(String[] args) {
         Array07 T = new Array07();
         Scanner kb = new Scanner(System.in);

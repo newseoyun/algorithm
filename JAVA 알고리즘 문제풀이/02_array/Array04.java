@@ -40,5 +40,4 @@ public class Array04 {
         System.out.println("");
         T.solution2(n);
     }
-    
 }

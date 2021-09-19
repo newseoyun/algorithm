@@ -2,14 +2,7 @@ import java.util.Scanner;
 
 /**
  * 수열 추측하기
-
-입력 (numCnt, finalNum)
-4 16
-
-출력 (제일 상위 숫자들)
-3 1 2 4
-
-*/
+ */
 public class DfsBfs08 {    
 
     static int[] b;

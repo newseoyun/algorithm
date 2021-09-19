@@ -18,7 +18,6 @@ public class Array02 {
         return answer;
     }
 
-
     public static void main(String[] args) {
         Array02 T = new Array02();
         Scanner kb = new Scanner(System.in);
@@ -30,5 +29,4 @@ public class Array02 {
         }
         System.out.print(T.solution(n, arr));
     }
-    
 }

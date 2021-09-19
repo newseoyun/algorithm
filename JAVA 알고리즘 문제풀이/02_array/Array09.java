@@ -48,5 +48,4 @@ public class Array09 {
         }
         System.out.print(T.solution(n, arr));
     }
-
 }

@@ -6,7 +6,7 @@ import java.util.*;
 
 class TimeS implements Comparable<TimeS> {
     public int time;
-	public char state;
+    public char state;
 
     TimeS(int time, char state) {
         this.time = time;
@@ -16,7 +16,7 @@ class TimeS implements Comparable<TimeS> {
     @Override
     public int compareTo(TimeS ob) {
         if(this.time == ob.time) return this.state - ob.state;
-		else return this.time - ob.time;
+        else return this.time - ob.time;
     }
 }
 

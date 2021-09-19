@@ -2,25 +2,6 @@ import java.util.Scanner;
 
 /**
  * 미로 탐색(DFS)
-
-7 x 7 격자판에서 
-출발점(1, 1), 도착점(7, 7)
-각 칸의 1은 벽, 0은 통로
-
-출발점에서 도착점까지 갈 수 있는 방법의 수?
-
-입력
-0 0 0 0 0 0 0
-0 1 1 1 1 1 0
-0 0 0 1 0 0 0
-1 1 0 1 0 1 1
-1 1 0 0 0 0 1
-1 1 0 1 1 0 0
-1 0 0 0 0 0 0
-
-출력
-8
-
  */ 
 public class DfsBfs10 {
 
@@ -58,5 +39,4 @@ public class DfsBfs10 {
         T.DFS(1, 1);
         System.out.print(answer);
     }
-    
 }

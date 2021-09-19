@@ -30,7 +30,6 @@ class String04 {
             String tmp = String.valueOf(s);
             answer.add(tmp);
         }
-
         return answer;
     }
 

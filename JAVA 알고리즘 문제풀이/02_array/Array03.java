@@ -37,5 +37,4 @@ public class Array03 {
             System.out.println(x);
         }
     }
-
 }

@@ -4,15 +4,6 @@ import java.util.Scanner;
 
 /**
  * 동전 교환 DFS
-
-입력
-3  (동전 종류 수)
-1 2 5  (동전 종류 액면)
-15  (값)
-
-출력
-3  (거슬러 줄 동전의 최소 개수)
-
  */
 public class DfsBfs05 {
     

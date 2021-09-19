@@ -4,23 +4,6 @@ import java.util.Scanner;
 
 /**
  * 미로의 최단거리 통로(BFS)
-
-07-14 그래프 최단거리 참고.
-입력 격자판과 같은 크기의 배열을 만들어서 거리(이동횟수)를 저장함.
-
-
-입력
-0 0 0 0 0 0 0
-0 1 1 1 1 1 0
-0 0 0 1 0 0 0
-1 1 0 1 0 1 1
-1 1 0 1 0 0 0
-1 0 0 0 1 0 0
-1 0 1 0 0 0 0
-
-출력
-12
-
  */
 public class DfsBfs11 {
 
@@ -62,5 +45,4 @@ public class DfsBfs11 {
         if (distance[7][7] == 0) System.out.println(-1);
         else System.out.println(distance[7][7]);
     }
-    
 }

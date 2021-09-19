@@ -5,19 +5,7 @@ import java.util.Scanner;
  *  마구간 정하기(결정알고리즘)
  */
 public class SortingSearching10 {
-
-
-    /**
-     * <pre>
-    입력 예
-    5 3
-    1 2 8 4 9
-     * </pre>
-     * @param n
-     * @param c
-     * @param arr
-     * @return 가장 가까운 두 말의 최대 거리
-     */
+    
     int solution(int n, int c, int[] arr) {
         int answer = 0;
         Arrays.sort(arr);

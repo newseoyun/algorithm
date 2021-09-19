@@ -46,5 +46,4 @@ public class Rtg13 {
         T.DFS(1);
         System.out.println(answer);
     }
-    
 }

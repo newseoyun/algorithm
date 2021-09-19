@@ -2,18 +2,6 @@ import java.util.Scanner;
 
 /**
  * 조합 구하기
-
-입력
-4 2
-
-출력
-1 2
-1 3
-1 4
-2 3
-2 4
-3 4
-
  */
 public class DfsBfs09 {
     
