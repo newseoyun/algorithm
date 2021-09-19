@@ -68,7 +68,6 @@ class Main {
             graph.get(a).add(new Edge(b, c));
         }
         T.solution(1);
-        
         for (int i=2; i<=n; i++) {
             if (dis[i] != Integer.MAX_VALUE) System.out.println(i + " : " + dis[i]);
             else System.out.println(i + " : impossible");
