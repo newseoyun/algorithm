@@ -1,7 +1,7 @@
 import java.util.*;
 
 /**
- * 친구인가(Union&Find)
+ * 친구인가(Disjoint-Set: Union&Find)
  */
 class Greedy06 {
 

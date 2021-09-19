@@ -1,7 +1,7 @@
 import java.util.*;
 
 /**
- * 원더랜드(크루스칼, Union&Find)
+ * 원더랜드(최소 스패닝 트리: 크루스칼, Union&Find)
  */
 
 class Edge07 implements Comparable<Edge07> {

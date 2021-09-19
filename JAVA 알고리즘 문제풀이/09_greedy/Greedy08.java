@@ -1,7 +1,7 @@
 import java.util.*;
 
 /**
- * 원더랜드(프림, 우선순위큐)
+ * 원더랜드(최소 스패닝 트리: 프림, 우선순위큐)
  */
 
 class Edge08 implements Comparable<Edge08> {
