@@ -5,26 +5,26 @@ import java.util.*;
  */
 class Greedy06 {
 
-    static int[] unf;
+    static int[] unionAndFind;
 
     public static int Find(int v) {
-        if (v == unf[v]) return v;
-        else return unf[v] = Find(unf[v]);
+        if (v == unionAndFind[v]) return v;
+        else return unionAndFind[v] = Find(unionAndFind[v]);
     }
 
     public static void Union(int a, int b) {
         int fa = Find(a);
         int fb = Find(b);
-        if (fa != fb) unf[fa] = fb;
+        if (fa != fb) unionAndFind[fa] = fb;
     }
 
     public static void main(String[] args) {
         Scanner kb = new Scanner(System.in);
         int n = kb.nextInt();
         int m = kb.nextInt();
-        unf = new int[n + 1];
+        unionAndFind = new int[n + 1];
 
-        for(int i=1; i<=n; i++) unf[i] = i;
+        for(int i=1; i<=n; i++) unionAndFind[i] = i;
 
         for(int i=1; i<=m; i++) {
             int a = kb.nextInt();
