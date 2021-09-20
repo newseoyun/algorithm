@@ -5,14 +5,14 @@ import java.util.*;
  */
 
 class Brick implements Comparable<Brick> {
-    public int s;
-    public int h;
-    public int w;
+    public int baseArea;
+    public int height;
+    public int weight;
 
-    Brick(int s, int h, int w) {
-        this.s = s;
-        this.h = h;
-        this.w = w;
+    Brick(int baseArea, int height, int weight) {
+        this.baseArea = baseArea;
+        this.height = height;
+        this.weight = weight;
     }
     
     @Override

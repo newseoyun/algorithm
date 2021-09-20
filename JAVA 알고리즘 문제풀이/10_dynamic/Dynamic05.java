@@ -1,16 +1,18 @@
 import java.util.*;
 
 /**
- * 동전 교환(냅색 알고리즘)
+ * 동전 교환(Knapsack Algorithm)
  */
 
 class Dynamic05 {
-    static int n, m;
+    static int n;
+    static int m;
     static int[] dy;
 
     public int solution(int[] coin) {
         Arrays.fill(dy, Integer.MAX_VALUE);
         dy[0] = 0;
+
         for (int i=0; i<n; i++) {
             for (int j=coin[i]; j<=m; j++) {
                 dy[j] = Math.min(dy[j], dy[j - coin[i]] + 1);

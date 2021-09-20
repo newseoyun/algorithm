@@ -12,10 +12,11 @@ class Dynamic06{
         int[] dy = new int[m + 1];
 
         for (int i=0; i<n; i++) {
-            int ps = kb.nextInt();
-            int pt = kb.nextInt();
-            for (int j=m; j>=pt; j--) {
-                dy[j] = Math.max(dy[j], dy[j - pt] + ps);
+            int value = kb.nextInt();
+            int time = kb.nextInt();
+
+            for (int j=m; j>=time; j--) {
+                dy[j] = Math.max(dy[j], dy[j - time] + value);
             }
         }
         System.out.print(dy[m]);
