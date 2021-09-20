@@ -30,7 +30,7 @@ class Greedy08 {
 		for (int i=0; i<=n; i++) {
 			graph.add(new ArrayList<Edge08>());
 		}
-		int[] ch=new int[n + 1];
+		int[] checkArray = new int[n + 1];
 
 		for (int i=0; i<m; i++) {
 			int a = kb.nextInt();
@@ -47,12 +47,12 @@ class Greedy08 {
 			Edge08 tmp = pQ.poll();
 			int ev = tmp.vertex;
 
-			if (ch[ev] == 0) {
-				ch[ev] = 1;
+			if (checkArray[ev] == 0) {
+				checkArray[ev] = 1;
 				answer += tmp.cost;
 
 				for (Edge08 ob : graph.get(ev)) {
-					if (ch[ob.vertex] == 0) pQ.offer(new Edge08(ob.vertex, ob.cost));
+					if (checkArray[ob.vertex] == 0) pQ.offer(ob);
 				}
 			}
 		}
