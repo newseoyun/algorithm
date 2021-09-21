@@ -4,7 +4,6 @@ import java.util.Scanner;
  * 합이 같은 부분집합
  */
 public class DfsBfs01 {
-
     static String answer = "NO";
     static int n = 0;
     static int total = 0;
@@ -29,6 +28,7 @@ public class DfsBfs01 {
         Scanner kb = new Scanner(System.in);
         n = kb.nextInt();
         int[] arr = new int[n];
+        
         for (int i=0; i<n; i++) {
             arr[i] = kb.nextInt();
             total += arr[i];

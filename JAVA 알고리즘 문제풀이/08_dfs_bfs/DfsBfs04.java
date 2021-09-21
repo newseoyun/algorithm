@@ -4,7 +4,6 @@ import java.util.Scanner;
  * 중복순열
  */
 public class DfsBfs04 {
-
     static int[] pm;
     static int n;
     static int m;

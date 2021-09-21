@@ -9,9 +9,11 @@ public class SeriesOfNumMath05 {
         int answer = 0;
         int cnt = 1;
         n--;
+
         while (n > 0) {
             cnt++;
             n = n - cnt;
+            
             if (n % cnt == 0) answer++;
         }
         return answer;

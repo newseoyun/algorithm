@@ -21,13 +21,13 @@ public class DfsBfs03 {
     }
 
     public static void main(String[] args) {
-        
         DfsBfs03 T = new DfsBfs03();
         Scanner kb = new Scanner(System.in);
         n = kb.nextInt();
         m = kb.nextInt();
         int[] a = new int[n];
         int[] b = new int[n];
+        
         for (int i=0; i<n; i++) {
             a[i] = kb.nextInt();
             b[i] = kb.nextInt();

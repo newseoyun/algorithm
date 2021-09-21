@@ -8,7 +8,6 @@ import java.util.Scanner;
  * 송아지 위치까지 최소 몇 번? (내 위치 5, 송아지위치 14)
  */
 public class Rtg08 {
-
     int answer = 0;
     int[] dis = {1, -1, 5};
     int[] ch;
@@ -29,6 +28,7 @@ public class Rtg08 {
                 
                 for (int j = 0; j < 3; j++) {
                     int nx = x + dis[j];
+                    
                     if (nx == e) return level + 1;
                     if (nx >= 1 && nx <= 10000 && ch[nx] == 0) {
                         ch[nx] = 1;

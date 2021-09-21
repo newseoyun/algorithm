@@ -3,7 +3,6 @@
  * 전위순회(부모-왼-오), 중위순회(왼-부모-오), 후위순회(왼-오-부모)
  */
 public class Rtg05 {
-    
     Node root;
   
     void DFS(Node root) {

@@ -12,14 +12,14 @@ public class SortingSearching08 {
         int rt = n - 1;
         Arrays.sort(arr);
         
-        while(lt <= rt) {
+        while (lt <= rt) {
             int mid = (lt + rt) / 2;
-            if(arr[mid] == target) {
+            if (arr[mid] == target) {
                 answer = mid + 1;
                 break;
             }
-            if(arr[mid] > target) rt = mid - 1;
-            if(arr[mid] < target) lt = mid + 1;
+            if (arr[mid] > target) rt = mid - 1;
+            if (arr[mid] < target) lt = mid + 1;
         }
         return answer;
     }
@@ -30,7 +30,8 @@ public class SortingSearching08 {
         int n = kb.nextInt();
         int target = kb.nextInt();
         int[] arr = new int[n];
-        for(int i=0; i<n; i++) {
+
+        for (int i=0; i<n; i++) {
             arr[i] = kb.nextInt();
         }
         System.out.print(T.solution(n, target, arr));

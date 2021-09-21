@@ -3,7 +3,6 @@
  * (최단거리 문제는 BFS로 푸는 것이 BEST)
  */
 public class Rtg09 {
-
     Node root;
 
     int DFS(int L, Node root) {

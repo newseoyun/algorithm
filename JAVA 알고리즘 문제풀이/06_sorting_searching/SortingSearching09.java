@@ -11,9 +11,10 @@ public class SortingSearching09 {
         int lt = Arrays.stream(arr).max().getAsInt();
         int rt = Arrays.stream(arr).sum();
 
-        while(lt <= rt) {
+        while (lt <= rt) {
             int mid = (lt + rt) / 2;
-            if(count(arr, mid) <= m) {
+            
+            if (count(arr, mid) <= m) {
                 answer = mid;
                 rt = mid - 1;
             } else {
@@ -27,8 +28,8 @@ public class SortingSearching09 {
         int cnt = 1;
         int sum = 0;
 
-        for(int x : arr) {
-            if(sum + x > capacity) {
+        for (int x : arr) {
+            if (sum + x > capacity) {
                 cnt++;
                 sum = x;
             } else {
@@ -44,7 +45,8 @@ public class SortingSearching09 {
         int n = kb.nextInt();
         int m = kb.nextInt();
         int[] arr = new int[n];
-        for(int i=0; i<n; i++) {
+
+        for (int i=0; i<n; i++) {
             arr[i] = kb.nextInt();
         }
         System.out.println(T.solution(n, m, arr));

@@ -5,7 +5,6 @@ import java.util.Queue;
  * Tree 말단 노드까지의 가장 짧은 경로(BFS)
  */
 public class Rtg10 {
-
     Node root;
 
     int BFS(Node root) {

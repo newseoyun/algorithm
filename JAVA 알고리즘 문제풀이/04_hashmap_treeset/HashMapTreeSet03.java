@@ -15,6 +15,7 @@ public class HashMapTreeSet03 {
             HM.put(arr[i], HM.getOrDefault(arr[i], 0) + 1);
         }
         int lt = 0;
+
         for (int rt=k-1; rt<n; rt++) {
             HM.put(arr[rt], HM.getOrDefault(arr[rt], 0) + 1);
             answer.add(HM.size());
@@ -32,6 +33,7 @@ public class HashMapTreeSet03 {
         int n = kb.nextInt();
         int k = kb.nextInt();
         int[] arr = new int[n];
+        
         for(int i=0; i<n; i++) {
             arr[i] = kb.nextInt();
         }

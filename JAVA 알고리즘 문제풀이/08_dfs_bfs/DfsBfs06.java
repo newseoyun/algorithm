@@ -4,7 +4,6 @@ import java.util.Scanner;
  * 순열 구하기
  */
 public class DfsBfs06 {
-
     static int[] pm;
     static int[] ch;
     static int[] arr;

@@ -7,7 +7,6 @@ import java.util.Scanner;
  * 1번에서 N번으로 가는 모든 경로의 가지 수
  */
 public class Rtg13 {
-
     static int n = 0;
     static int m = 0;
     static int answer = 0;
@@ -33,10 +32,12 @@ public class Rtg13 {
         n = kb.nextInt();
         m = kb.nextInt();
         graph = new ArrayList<ArrayList<Integer>>();
+
         for (int i=0; i<=n; i++) {
             graph.add(new ArrayList<Integer>());
         }
         checkArray = new int[n+1];
+        
         for (int i=0; i<m; i++) {
             int a = kb.nextInt();
             int b = kb.nextInt();

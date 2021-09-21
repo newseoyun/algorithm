@@ -7,7 +7,6 @@ import java.util.Scanner;
  * DfsBfs13과 문제 같음
  */
 public class DfsBfs14 {
-
     static int answer;
     static int n;
     static int[] dx = {-1, -1, 0, 1, 1, 1, 0, -1};
@@ -20,9 +19,11 @@ public class DfsBfs14 {
 
         while (!queue.isEmpty()) {
             Point pos = queue.poll();
+
             for (int i=0; i<8; i++) {
                 int nx = pos.x + dx[i];
                 int ny = pos.y + dy[i];
+            
                 if (nx >=0 && nx < n && ny >= 0 && ny < n && board[nx][ny] == 1) {
                     board[nx][ny] = 0;
                     queue.add(new Point(nx, ny));
@@ -48,6 +49,7 @@ public class DfsBfs14 {
         Scanner kb = new Scanner(System.in);
         n = kb.nextInt();
         int[][] arr = new int[n][n];
+        
         for (int i=0; i<n; i++) {
             for (int j=0; j<n; j++) {
                 arr[i][j] = kb.nextInt();

@@ -8,8 +8,8 @@ public class HashMapTreeSet02 {
 
     String solution(String a, String b) {
         String answer = "YES";
-
         HashMap<Character, Integer> map = new HashMap<>();
+        
         for (char x : a.toCharArray()) {
             map.put(x, map.getOrDefault(x, 0) + 1);
         }

@@ -10,10 +10,10 @@ public class StackQueue07 {
     String solution(String key, String str) {
         Queue<Character> q = new LinkedList<>();
 
-        for(char x : key.toCharArray()) q.offer(x);
-        for(char s : str.toCharArray()) {
-            if(q.isEmpty()) return "YES";
-            if(s == q.peek()) q.poll(); 
+        for (char x : key.toCharArray()) q.offer(x);
+        for (char s : str.toCharArray()) {
+            if (q.isEmpty()) return "YES";
+            if (s == q.peek()) q.poll(); 
         }
         return "NO";
     }

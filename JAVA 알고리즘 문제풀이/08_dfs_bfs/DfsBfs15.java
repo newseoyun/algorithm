@@ -5,7 +5,6 @@ import java.util.Scanner;
  * 피자 배달 거리
  */
 public class DfsBfs15 {
-
     static int n;
     static int m;
     static int len;
@@ -17,8 +16,10 @@ public class DfsBfs15 {
     void DFS(int L, int s) {
         if (L == m) {
             int sum = 0;
+            
             for (Point h : house) {
                 int dis = Integer.MAX_VALUE;
+
                 for (int i : combination) {
                     dis = Math.min(dis, Math.abs(h.x - pizza.get(i).x) + Math.abs(h.y - pizza.get(i).y));
                 }
@@ -40,6 +41,7 @@ public class DfsBfs15 {
         m = kb.nextInt();
         pizza = new ArrayList<>();
         house = new ArrayList<>();
+
         for (int i=0; i<n; i++) {
             for (int j=0; j<n; j++) {
                 int tmp = kb.nextInt();

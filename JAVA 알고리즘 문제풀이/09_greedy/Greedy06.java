@@ -4,7 +4,6 @@ import java.util.*;
  * 친구인가(Disjoint-Set: Union&Find)
  */
 class Greedy06 {
-
     static int[] unionAndFind;
 
     public static int Find(int v) {

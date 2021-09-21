@@ -9,8 +9,10 @@ public class Complex04 {
         int answer = 0;
         int sum = 0;
         int lt = 0;
+        
         for (int rt=0; rt<n; rt++) {
             sum += arr[rt];
+
             if (sum == m) answer++;
             while (sum >= m) {
                 sum -= arr[lt++];
@@ -26,6 +28,7 @@ public class Complex04 {
         int n = kb.nextInt();
         int m = kb.nextInt();
         int[] arr = new int[n];
+
         for (int i=0; i<n; i++) {
             arr[i] = kb.nextInt();
         }

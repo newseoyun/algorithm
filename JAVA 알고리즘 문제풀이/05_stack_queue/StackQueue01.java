@@ -8,14 +8,14 @@ public class StackQueue01 {
 
     String solution(String str) {
         Stack<Character> stack = new Stack<>();
-        for(char a : str.toCharArray()) {
-            if(a == '(') stack.push(a);
+        for (char a : str.toCharArray()) {
+            if (a == '(') stack.push(a);
             else {
-                if(stack.isEmpty()) return "NO";
+                if (stack.isEmpty()) return "NO";
                 stack.pop();
             }
         }
-        if(!stack.isEmpty()) return "NO";
+        if (!stack.isEmpty()) return "NO";
         return "YES";
     }
 

@@ -30,11 +30,13 @@ class TwoPointers01 {
         Scanner kb = new Scanner(System.in);
         int n1 = kb.nextInt();
         int[] a = new int[n1];
+
         for (int i=0; i<n1; i++) {
             a[i] = kb.nextInt();
         }
         int n2 = kb.nextInt();
         int[] b = new int[n2];
+        
         for (int i=0; i<n2; i++) {
             b[i] = kb.nextInt();
         }

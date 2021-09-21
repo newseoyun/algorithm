@@ -4,7 +4,6 @@ import java.util.Scanner;
  * 경로탐색(DFS)
  */
 public class Rtg12 {
-
     static int n = 0;
     static int m = 0;
     static int answer = 0;
@@ -29,8 +28,8 @@ public class Rtg12 {
         Scanner kb = new Scanner(System.in);
         n = kb.nextInt();
         m = kb.nextInt();
-        graph = new int[n+1][n+1];
-        checkArray = new int[n+1];
+        graph = new int[n + 1][n + 1];
+        checkArray = new int[n + 1];
         for (int i=0; i<m; i++) {
             int a = kb.nextInt();
             int b = kb.nextInt();

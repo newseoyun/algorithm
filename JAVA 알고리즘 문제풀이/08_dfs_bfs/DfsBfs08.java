@@ -4,7 +4,6 @@ import java.util.Scanner;
  * 수열 추측하기
  */
 public class DfsBfs08 {    
-
     static int[] b;
     static int[] p;
     static int[] checkArray;

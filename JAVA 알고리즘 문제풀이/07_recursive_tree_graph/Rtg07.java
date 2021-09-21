@@ -7,18 +7,16 @@ import java.util.Queue;
  * 루트에서 한 번 만에 가는 것 탐색, 두 번 만에 가는 것 탐색 ...
  */
 public class Rtg07 {
-
     Node root;
 
     void BFS(Node root) {
         Queue<Node> Q = new LinkedList<>();
         Q.offer(root);
-
-        int lvl= 0;
+        int lvl = 0;
 
         while (!Q.isEmpty()) {
             int len = Q.size();
-            System.out.print(lvl+ " : ");
+            System.out.print(lvl + " : ");
         
             for (int i=0; i<len; i++) {
                 Node current = Q.poll();

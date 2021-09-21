@@ -12,11 +12,12 @@ public class StackQueue08 {
         int dp = 1;
         int target = 0;
         Queue<Integer> q = new LinkedList<>();
-        for(int i=0; i<n; i++) {
-            if(i == c) target = list[i] * 100 - dp; 
+        
+        for (int i=0; i<n; i++) {
+            if (i == c) target = list[i] * 100 - dp; 
             q.offer((list[i] == list[c]) ? list[i] * 100 - dp++ : list[i] * 100);
         }
-        while(!q.isEmpty()) if(q.poll() > target) answer++;
+        while(!q.isEmpty()) if (q.poll() > target) answer++;
         return answer;
     }
 
@@ -26,7 +27,8 @@ public class StackQueue08 {
         int n = kb.nextInt();
         int c = kb.nextInt();
         int[] list = new int[n];
-        for(int i=0; i<n; i++) {
+
+        for (int i=0; i<n; i++) {
             list[i] = kb.nextInt();
         }
         System.out.print(T.solution(n, c, list));

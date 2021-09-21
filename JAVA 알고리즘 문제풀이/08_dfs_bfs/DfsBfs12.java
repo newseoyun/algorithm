@@ -6,7 +6,6 @@ import java.util.Scanner;
  * 토마토(BFS)
  */
 public class DfsBfs12 {
-
     static int[] dx = {-1, 0, 1, 0};
     static int[] dy = {0, 1, 0, -1};
     static int[][] board;
@@ -18,9 +17,11 @@ public class DfsBfs12 {
     void BFS() {
         while (!queue.isEmpty()) {
             Point tmp = queue.poll();
+
             for (int i=0; i<4; i++) {
                 int nx = tmp.x + dx[i];
                 int ny = tmp.y + dy[i];
+                
                 if (nx >= 0 && nx < n && ny >= 0 && ny < m && board[nx][ny] == 0) {
                     board[nx][ny] = 1;
                     queue.offer(new Point(nx, ny));

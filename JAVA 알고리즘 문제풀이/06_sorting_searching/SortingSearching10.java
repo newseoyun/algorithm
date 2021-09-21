@@ -11,9 +11,10 @@ public class SortingSearching10 {
         Arrays.sort(arr);
         int lt = 1;
         int rt = arr[n-1];
-        while(lt <= rt) {
+        
+        while (lt <= rt) {
             int mid = (lt + rt) / 2;
-            if(count(arr, mid) >=  c) {
+            if (count(arr, mid) >=  c) {
                 answer = mid;
                 lt = mid + 1;
             } else {
@@ -26,8 +27,9 @@ public class SortingSearching10 {
     int count(int[] arr, int dist) {
         int cnt = 1;
         int ep = arr[0];
-        for(int i=1; i<arr.length; i++) {
-            if(arr[i] - ep >= dist) {
+
+        for (int i=1; i<arr.length; i++) {
+            if (arr[i] - ep >= dist) {
                 cnt++;
                 ep = arr[i];
             }
@@ -41,7 +43,8 @@ public class SortingSearching10 {
         int n = kb.nextInt();
         int c = kb.nextInt();
         int[] arr = new int[n];
-        for(int i=0; i<n; i++) {
+
+        for (int i=0; i<n; i++) {
             arr[i] = kb.nextInt();
         }
         System.out.print(T.solution(n, c, arr));

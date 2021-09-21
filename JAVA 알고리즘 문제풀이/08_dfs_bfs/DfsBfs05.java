@@ -6,7 +6,6 @@ import java.util.Scanner;
  * 동전 교환 DFS
  */
 public class DfsBfs05 {
-    
     static int n;
     static int m;
     static int answer = Integer.MAX_VALUE;
@@ -27,6 +26,7 @@ public class DfsBfs05 {
         Scanner kb = new Scanner(System.in);
         n = kb.nextInt();
         Integer[] arr = new Integer[n];
+        
         for (int i=0; i<n; i++) arr[i] = kb.nextInt();
         Arrays.sort(arr, Collections.reverseOrder());
         m = kb.nextInt();

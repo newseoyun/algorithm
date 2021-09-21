@@ -12,12 +12,16 @@ public class DfsBfs052 {
         check[target] = 1;
         q.offer(target);
         int level = 0;
+
         while (!q.isEmpty()) {
             int size = q.size();
+
             for (int i = 0; i < size; i++) {
                 int exchange = q.poll();
+
                 for (int j = 0; j < typesOfCoin; j++) {
                     int nextExchange = exchange - coins[j];
+
                     if (nextExchange > 0 && check[nextExchange] == 0) {
                         check[nextExchange] = 1;
                         q.offer(nextExchange);
@@ -35,6 +39,7 @@ public class DfsBfs052 {
         Scanner in = new Scanner(System.in);
         int typesOfCoin = in.nextInt();
         int[] coins = new int[typesOfCoin];
+        
         for (int i = 0; i < typesOfCoin; i++)
             coins[i] = in.nextInt();
         int target = in.nextInt();

@@ -57,7 +57,6 @@ class Main {
         for (int i=0; i<=n; i++) {
             graph.add(new ArrayList<Edge>());
         }
-
         dis = new int[n + 1];
         Arrays.fill(dis, Integer.MAX_VALUE);
         

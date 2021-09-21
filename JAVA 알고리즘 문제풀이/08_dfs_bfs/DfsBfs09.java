@@ -4,13 +4,12 @@ import java.util.Scanner;
  * 조합 구하기
  */
 public class DfsBfs09 {
-    
     static int[] combination;
     static int n;
     static int m;
 
     void DFS(int L, int s) {
-        if(L == m) {
+        if (L == m) {
             for (int x : combination) System.out.print(x + " ");
             System.out.println();
         } else {
