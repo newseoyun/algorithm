@@ -16,14 +16,13 @@ class Main {
 
     /*
 
-		Scanner sc=new Scanner(System.in);
-		int c=sc.nextInt();
+		Scanner sc = new Scanner(System.in);
+		int len = sc.nextInt();
 		
-		for(int i=0;i<c;i++) {
-			
-			int a=sc.nextInt();
-			int b=sc.nextInt();
-			System.out.println(a+b);
+		for(int i=0; i<len; i++) {
+			int a = sc.nextInt();
+			int b = sc.nextInt();
+			System.out.println(a + b);
 		}
 
     */
