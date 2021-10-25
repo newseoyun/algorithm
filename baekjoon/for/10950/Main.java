@@ -1,5 +1,9 @@
 import java.util.Scanner;
 
+/**
+ * A+B - 3
+ * https://www.acmicpc.net/problem/10950
+ */
 class Main {
     public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
