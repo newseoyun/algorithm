@@ -1,7 +1,6 @@
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.Scanner;
 
 /**
  * 합
@@ -9,20 +8,12 @@ import java.util.Scanner;
  */
 class Main {
 
-    public static void main(String args[]) {
-
+    public static void main(String args[]) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-
-        int test;
-        try {
-            test = Integer.parseInt(br.readLine());
-            br.close();
-            System.out.println("test? " + test);
-        } catch (IOException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        }
-
+        int num = Integer.valueOf(br.readLine());
+        br.close();
+        // System.out.println( (1 + n) * n / 2 );
+        for (int i=num-1; i>=0; i--) num += i; 
+        System.out.println(num);
     }
-    
 }
