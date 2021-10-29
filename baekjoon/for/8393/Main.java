@@ -10,10 +10,10 @@ class Main {
 
     public static void main(String args[]) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        int num = Integer.valueOf(br.readLine());
+        int n = Integer.valueOf(br.readLine());
         br.close();
         // System.out.println( (1 + n) * n / 2 );
-        for (int i=num-1; i>=0; i--) num += i; 
-        System.out.println(num);
+        for (int i=n-1; i>=0; i--) n += i; 
+        System.out.println(n);
     }
 }
