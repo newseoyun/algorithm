@@ -18,11 +18,11 @@ class Main {
         int n = Integer.valueOf(br.readLine());
         int numOne = 0;
         int numTwo = 0;
-        for (int i=0; i<n; i++) {
+        for (int i=1; i<=n; i++) {
             StringTokenizer st = new StringTokenizer(br.readLine(), " ");
             numOne = Integer.parseInt(st.nextToken());
             numTwo = Integer.parseInt(st.nextToken());
-            bw.write("Case #" + (i+1) + ": " + numOne + " + " + numTwo + " = " + (numOne + numTwo) + "\n");
+            bw.write("Case #" + (i) + ": " + numOne + " + " + numTwo + " = " + (numOne + numTwo) + "\n");
         }
         br.close();
         bw.flush();
