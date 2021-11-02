@@ -1,3 +1,6 @@
+import java.io.BufferedInputStream;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
 
 /**
  * 빠른 A+B
@@ -7,7 +10,8 @@ class Main {
 
 
     public static void main(String args[]) {
-        System.out.println("hi");
+        
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     }
     
 }
